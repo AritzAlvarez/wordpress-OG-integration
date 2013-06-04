@@ -1,4 +1,4 @@
-wordpress-OG-integration
+wordpress OG integration
 ========================
 
 My small snippet to integrate OG protocol in my wordpress templates, i use it in all my wordpress projects to add the facebook OpenGraph protocol to show feat image, description, link and that stuff when page or posts are shared in facebook.
