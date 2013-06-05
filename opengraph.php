@@ -2,32 +2,32 @@
 
 <!-- Facebook app and admin ID -->  
 
-<meta property="fb:app_id" content="your_fb_app_id" />  
-<meta property="fb:admins" content="your_fb_admin_id" />  
+<meta property="fb:app_id" content="your_app_ID" />  
+<meta property="fb:admins" content="your_admin_ID" />  
     
 <?php if ( is_single() || is_page() ) { ?>  
 
 <!-- if is a single content post or a single page -->
 
 <meta property="og:url" content="<?php the_permalink() ?>"/>  
-<meta property="og:title" content="<?php the_title(); ?>" />  
+<meta property="og:title" content="<?php bloginfo('name'); ?> :: <?php the_title(); ?>" />  
 <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />  
 <meta property="og:type" content="article" />  
 
 <?php 
 
   if ( has_post_thumbnail() ) {
-		
+
 		// if posts has featured image, stores url in var $url 
 		$url = wp_get_attachment_url(get_post_thumbnail_id()); 
-		
+
 		}
-		
+
 	else {
-		
+
 		// if has no featured image, stores url to default image in image directory inside our theme directory
 		$url= get_bloginfo('template_directory') . '/images/default.jpg';
-		
+
 		}
 ?>
 
