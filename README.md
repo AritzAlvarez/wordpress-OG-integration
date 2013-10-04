@@ -9,7 +9,7 @@ How to use it
 Ypu can simply copy paste on your `header.php` file or can upsload in your includes files (i usually choose this option) and call it in `header.php` like this...
 
 ```php
-<?php include (TEMPLATEPATH . '/inc/sidebar-activitats-loop.php' ); ?>
+<?php include (TEMPLATEPATH . '/inc/opengraph.php' ); ?>
 ```
 
 Whatever you choose (copy or call) must do it between `<head>` and `</head>` tags
